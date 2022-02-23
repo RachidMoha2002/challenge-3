@@ -1,0 +1,109 @@
+*::before ::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Colors*/
+
+  /* Primary*/
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral*/
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --dark-blue-shadow: hsl(223, 47%, 23%, 0.2);
+  --bright-blue-hover: hsl(245, 75%, 52%, 0.7);
+}
+body {
+  background: url(./images/pattern-background-desktop.svg);
+  background-size: cover;
+
+  color: var(--dark-blue);
+  font-size: 1.25rem;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container {
+  max-width: 28rem;
+  position: relative;
+  border-radius: 5%;
+  background-color: white;
+}
+/* the main photo*/
+.card-photo {
+  max-width: 28rem;
+  height: fit-content;
+  border-radius: 5% 5% 0 0;
+}
+/* card body */
+.card-body {
+  padding: 20px 40px;
+  text-align: center;
+}
+.typo h2 {
+  font-weight: 900;
+}
+.typo p {
+  color: var(--desaturated-blue);
+  font-size: 1.1rem;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+/* payment section */
+.payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  padding: 0 20px;
+  border-radius: 15px;
+}
+.annual {
+  display: flex;
+  align-items: center;
+}
+.annual img {
+  padding-right: 10px;
+}
+.annual p strong {
+  font-weight: 600;
+  padding-left: 10px;
+}
+.annual p span {
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+/* the button and the hovers*/
+.button {
+  padding: 15px 10px;
+  background-color: var(--bright-blue);
+  color: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  transition: ease-in 0.5s;
+}
+.button:hover {
+  background-color: var(--bright-blue-hover);
+}
+.hov-eff:hover {
+  color: var(--bright-blue-hover);
+}
+.effect:hover {
+  color: black;
+}
